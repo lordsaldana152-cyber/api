@@ -52,4 +52,5 @@ def gif_logger():
     r = requests.get(GIF_URL, stream=True)
     return Response(r.iter_content(chunk_size=1024), content_type='image/gif')
 
+
 # No app.run() for Vercel; it handles the server start
